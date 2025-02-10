@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Adnan Shakir - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .project, .skills-container {
+            margin: 10px 0;
+        }
+        .project a {
+            display: inline-block;
+            background: grey;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .project a:hover {
+            background: #555;
+        }
+        .skills-container .skill {
+            display: inline-block;
+            background: grey;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .skills-container .skill:hover {
+            transform: scale(1.1);
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 32px;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Mohd Adnan Shakir</h1>
+        <p>Data Analyst | Database Enthusiast | Problem Solver</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A passionate Data Analyst & Developer with expertise in Python, SQL, Java, and Power BI.
+           I love transforming raw data into meaningful insights and building powerful applications.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Automated Database Reporting Tool</h3>
+            <p>Reduced reporting time by 90% and enhanced decision-making capabilities.</p>
+            <a href="https://github.com/adnan-07/automated-db-reporting" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Data Cleaning & Analysis</h3>
+            <p>Analyzed large datasets to extract insights and trends.</p>
+            <a href="https://github.com/adnan-07/data-cleaning-analysis" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Java Calculator</h3>
+            <p>Created a Java-based calculator supporting arithmetic operations.</p>
+            <a href="https://github.com/adnan-07/java-calculator" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span class="skill" onclick="showSkill('Python')">Python</span>
+            <span class="skill" onclick="showSkill('SQL')">SQL</span>
+            <span class="skill" onclick="showSkill('Java')">Java</span>
+            <span class="skill" onclick="showSkill('MySQL')">MySQL</span>
+            <span class="skill" onclick="showSkill('MongoDB')">MongoDB</span>
+            <span class="skill" onclick="showSkill('Git')">Git</span>
+            <span class="skill" onclick="showSkill('Power BI')">Power BI</span>
+            <span class="skill" onclick="showSkill('Excel')">Excel</span>
+            <span class="skill" onclick="showSkill('IntelliJ IDEA')">IntelliJ IDEA</span>
+            <span class="skill" onclick="showSkill('VS Code')">VS Code</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me:</p>
+        <div class="social-icons">
+            <a href="https://github.com/adnan-07" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adnanshakir07" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:adnangkp546@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function showSkill(skill) {
+            alert("You clicked on " + skill + "!");
+        }
+    </script>
+</body>
+</html>
