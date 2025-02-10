@@ -1,0 +1,47 @@
+h1 {
+    font-style: italic;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: underline black;
+    font-size: 60px;
+  color: brown;
+  
+}  
+
+div {
+     text-align: center;
+      font-style:italic ;
+      font-size: 30px;
+       color: darkgreen; 
+      
+}
+
+body {
+     background-color: lightgreen;
+} 
+button {
+    font-size: 25px;
+     font-style: italic;
+     color: brown;
+     background-color: cornsilk;
+     border-color: black;
+}
+p {
+     font-style: italic;
+     color: brown;
+     font-weight: 700;   
+}
+   li a {
+        color: rgb(119, 72, 10);
+   }
+  h2 + button {
+       background-color: chartreuse;
+  }
+  li {
+       color: magenta;
+  }
+  button:hover {
+       background-color: chartreuse;
+       color: darkred;
+  }
+  
